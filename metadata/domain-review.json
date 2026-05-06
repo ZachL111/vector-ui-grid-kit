@@ -1,0 +1,73 @@
+{
+  "repo": "vector-ui-grid-kit",
+  "language": "Lua",
+  "category": "Frontend apps",
+  "goal": "Develop a Lua command-oriented project for grid scenarios with bounded scenario files, conflict explanations, and fixture-scale datasets.",
+  "review_model": {
+    "terms": [
+      "view drift",
+      "state pressure",
+      "layout risk",
+      "interaction cost"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "view drift",
+      "signal": 55,
+      "slack": 44,
+      "drag": 14,
+      "confidence": 72,
+      "score": 184,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "state pressure",
+      "signal": 55,
+      "slack": 23,
+      "drag": 12,
+      "confidence": 64,
+      "score": 161,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "layout risk",
+      "signal": 57,
+      "slack": 39,
+      "drag": 12,
+      "confidence": 74,
+      "score": 191,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "interaction cost",
+      "signal": 60,
+      "slack": 36,
+      "drag": 24,
+      "confidence": 77,
+      "score": 161,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "view drift",
+      "signal": 68,
+      "slack": 47,
+      "drag": 24,
+      "confidence": 78,
+      "score": 189,
+      "lane": "ship"
+    }
+  ]
+}
