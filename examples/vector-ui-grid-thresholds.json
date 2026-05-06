@@ -1,0 +1,17 @@
+{
+  "repo": "vector-ui-grid-kit",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 2,
+    "ship": 204,
+    "watch": 99
+  },
+  "terms": [
+    "view drift",
+    "state pressure",
+    "layout risk",
+    "interaction cost"
+  ]
+}

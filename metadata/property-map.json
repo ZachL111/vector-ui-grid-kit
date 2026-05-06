@@ -1,0 +1,28 @@
+{
+  "repo": "vector-ui-grid-kit",
+  "language": "Lua",
+  "category": "Frontend apps",
+  "goal": "Develop a Lua command-oriented project for grid scenarios with bounded scenario files, conflict explanations, and fixture-scale datasets.",
+  "weights": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 2
+  },
+  "thresholds": {
+    "ship": 204,
+    "watch": 99
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}
